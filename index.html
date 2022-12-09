@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+      Tutorial 11
+      Review Assignment
+
+      Hitori Interactive Puzzle
+      Author: Hesbon Osoro
+      Date: 12/10/22   
+
+      Filename:   jpf_hitori.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Hitori Puzzle</title>
+    <link href="jpf_reset.css" rel="stylesheet" />
+    <link href="jpf_styles.css" rel="stylesheet" />
+    <link href="jpf_hitori.css" rel="stylesheet" />
+    <script src="jpf_grids3.js" async></script>
+    <script src="jpf_hitori.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="jpf_logo2.png" alt="Japanese Puzzle Factory" id="logoimg" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Hints</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Competitions</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="topButtons">
+        <input type="button" class="puzzles" id="puzzle1" value="Puzzle 1" />
+        <input type="button" class="puzzles" id="puzzle2" value="Puzzle 2" />
+        <input type="button" class="puzzles" id="puzzle3" value="Puzzle 3" />
+      </div>
+
+      <h1 id="puzzleTitle"></h1>
+
+      <figure id="puzzle"></figure>
+
+      <div id="bottomButtons">
+        <input type="button" id="check" value="Check Solution" />
+        <input type="button" id="solve" value="Show Solution" />
+      </div>
+    </section>
+
+    <aside>
+      <p>
+        Click the <span>Puzzle 1</span> through <span>Puzzle 3</span>
+        buttons to select a puzzle. Click a cell in the table to circle it. Hold
+        down the Alt key and click a cell to block it. Hold down the Shift key
+        and click a cell to erase or block it. A completed puzzle should have
+        only circles and blocks.
+      </p>
+      <p>
+        Stumped? Click the <span>Check Solution</span> button to highlight your
+        errors. Incorrect numbers will show up in red. Give up? Click the
+        <span>Show Solution</span> button.
+      </p>
+    </aside>
+
+    <article>
+      <h1>About Hitori</h1>
+      <div class="para">
+        <strong>Hitori</strong> is a Japanese logic puzzle based on a grid of
+        numbers. Each number is either circled or blocked. The rules are
+        <ol>
+          <li>Blocks cannot connect horizontally or vertically.</li>
+          <li>
+            The same number cannot be circled more than once in any row or
+            column.
+          </li>
+          <li>
+            Circles must form a single path connected horizontally and
+            vertically, but not diagonally.
+          </li>
+        </ol>
+      </div>
+      <h2>Tips</h2>
+      <div class="para">
+        <ol>
+          <li>
+            When a block is found, surround it with circles horizontally and
+            vertically.
+          </li>
+          <li>
+            When a number is circled, mark all duplicate numbers in that row and
+            column as blocks.
+          </li>
+          <li>
+            Any cell between duplicate numbers (horizontally or vertically) is
+            always circled.
+          </li>
+          <li>
+            No circled number or group of circled numbers can be entirely
+            surrounded by blocks.
+          </li>
+        </ol>
+      </div>
+    </article>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Akari</a></li>
+          <li><a href="#">Divide by Box</a></li>
+          <li><a href="#">Fillomino</a></li>
+          <li><a href="#">Hanjie</a></li>
+          <li><a href="#">Hashiwokakero</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Heyawake</a></li>
+          <li><a href="#">Hitori</a></li>
+          <li><a href="#">Kakuro</a></li>
+          <li><a href="#">Katagaku</a></li>
+          <li><a href="#">Masugo</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Masyu</a></li>
+          <li><a href="#">Oekaki Logic</a></li>
+          <li><a href="#">Shikaku</a></li>
+          <li><a href="#">Sudoku</a></li>
+          <li><a href="#">Suhai</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Super Sudoku</a></li>
+          <li><a href="#">Tenketsu</a></li>
+          <li><a href="#">Tentai Show</a></li>
+          <li><a href="#">Wordoku</a></li>
+          <li><a href="#">Yajilin</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+   Tutorial 11
+   Review Assignment
+
+   Hitori Puzzle Style Sheet
+   Author: Rebecca Peretz
+   Date:   2018-03-01
+
+   Filename:         jpf_hitori.css
+
+*/
+
+#hitoriGrid {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 0.8em;
+  background-color: rgb(220, 160, 40);
+  margin: 0px auto;
+  box-shadow: rgb(101, 101, 101) 5px 5px 10px, rgb(101, 101, 101) -5px 5px 10px;
+}
+
+table#hitoriGrid caption {
+  font-size: 1.25em;
+  color: rgb(195, 90, 16);
+  text-align: right;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+
+#hitoriGrid td {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: inset rgba(0, 0, 0, 0.65) 0px 0px 10px;
+}
+
+/* hitori cell styles */
+
+#hitoriGrid td.circles {
+  background-color: rgb(101, 101, 101);
+  color: white;
+  border-radius: 50%;
+}
+
+#hitoriGrid td.blocks {
+  background-color: black;
+  color: white;
+}
